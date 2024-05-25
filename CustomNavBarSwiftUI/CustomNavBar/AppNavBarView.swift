@@ -14,9 +14,12 @@ struct AppNavBarView: View {
                 Color.orange.ignoresSafeArea()
                 
                 CustomNavLink(destination:
-                                Text("子页面")
-                                .customNavigationTitle("子页面标题")
-                                .customNavigationSubtitle("子页面副标题")
+                                ZStack {
+                    Color.green.ignoresSafeArea()
+                    Text("子页面")
+                    .customNavigationTitle("子页面标题")
+                    .customNavigationSubtitle("子页面副标题")
+                }
                 ) {
                     
                     Text("导航跳转")
